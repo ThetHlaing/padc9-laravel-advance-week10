@@ -1,0 +1,60 @@
+<div class="wrap">
+    <div class="container">
+        <h1>300ms</p>
+            <div class="box1 box"></div>
+    </div>
+    <div class="container">
+        <h1>1s</p>
+            <div class="box2 box"></div>
+    </div>
+    <div class="container">
+        <h1>3s</p>
+            <div class="box3 box"></div>
+    </div>
+</div>
+
+<style>
+    .wrap {
+        margin: 50px;
+    }
+
+    .container {
+        display: inline-block;
+        width: 150px;
+    }
+
+    h1 {
+        color: lightgray;
+        font-family: lato;
+        font-size: 20px;
+        font-weight: 200;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .box {
+        border-radius: 50%;
+        height: 40px;
+        margin: 50px auto;
+        width: 40px;
+    }
+
+    .wrap:hover .box {
+        transform: scale(2);
+    }
+
+    .box1 {
+        background: #60D4C8;
+        transition: all 300ms;
+    }
+
+    .box2 {
+        background: #46BAAF;
+        transition: all 1s;
+    }
+
+    .box3 {
+        background: #3EA69B;
+        transition: all 3s;
+    }
+</style>

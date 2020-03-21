@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="item">1</div>
+    <div class="item item-center">2</div>
+    <div class="item">3</div>
+</div>
+
+<style>
+    .container {
+        display: flex;
+    }
+
+    .item {
+        flex-grow: 1;
+        height: 100px;
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 15px;
+        font-size: 150%;
+
+    }
+
+    .item-center {
+        flex-grow: 2;
+        /* Set the middle element to grow and stretch */
+    }
+
+    .item+.item {
+        margin-left: 2%;
+    }
+</style>

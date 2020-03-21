@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+</div>
+
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .item {
+        width: 40%;
+        height: 100px;
+        margin-bottom: 2%;
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+    }
+
+    .item:nth-child(3n) {
+        width: 100%;
+    }
+</style>
